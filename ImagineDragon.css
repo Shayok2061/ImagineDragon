@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*typography*/
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0em;
+    margin-top: 3.5em;
+    letter-spacing: .2em;
+}
+
+.subtitle{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0em;
+}
+.content h1{
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+}
+.content p{
+    color: white;
+    text-align: center;
+    margin-top: 0em;
+}
+.items h2{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .2em;
+    margin-left: .5em;
+}
+.items p{
+    margin-left: 1em;
+}
+.last-hard h2{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .2em;
+    text-align: center;
+    margin-bottom: 0;
+}
+.last-hard p{
+    text-align: center;
+    margin-top: 0;
+}
+.last-hard-content p{
+    text-align: left;
+    font-size: 1em;
+}
+/*NavBar*/
+.topnav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .9em 1em;
+    text-decoration: none;
+    text-align: center;
+}
+.topnav a:hover:not(.active){
+    background-color: #111;
+}
+@media screen and (max-width:800px) {
+    .topnav a{
+        float: none;
+    }
+    .topnav{
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+.active{
+    background-color: #4CAF50;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+.null{
+    width: 30%;
+    max-width: 100%;
+}    
+.image{
+    display: flex;
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom:10em;
+    justify-content: space-between;
+}
+.row{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.container{
+    width: 90%;
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:800px) {
+    .image{
+        flex-direction: column;
+    }
+    .null{
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+.container1{
+    width: 100%;
+    max-width: 100%;
+    background-color: #111;
+}
+.content{
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 1.5em ;
+}
+.contnet-items{
+    background-color: white;
+    padding: .5em;
+    border-bottom: 2px solid grey;
+}
+.contnet-items button{
+    border: none;
+    padding: .2em .5em;
+    background-color: orangered;
+    color: white;
+    margin-left: 1em;
+}
+.ctp{
+    border: none;
+    padding: .2em .5em;
+    border-radius: 2em;
+    background-color: #111;
+    color: white;
+    float: right;
+}
+.content-2{
+    max-width: 1000px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    /* border: 5px solid pink; */
+}
+.items img{
+    max-width: 100%;
+    
+}
+.items{
+    background-color: white;
+    /* border: 5px solid magenta; */
+    margin: .8em;
+}
+@media screen and (max-width:800px) {
+    .content-2{
+        flex-direction: column;
+    }
+}
+.items button{
+    border: none;
+    background-color: #333;
+    padding: .5em 1.2em;
+    color: white;
+    cursor: pointer;
+}
+.items button:hover{
+    background-color: #111;
+}
+.last-hard{
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.last-hard-content-holder{
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* border: 5px solid pink; */
+}
+.last-hard-content{
+    max-width: 100%;
+    width: 50%;
+    float: left;
+}
+.form .inp{
+    padding: 1em;
+    max-width: 100%;
+    width: 45%;
+    margin:.5em ;
+    border-radius: .3em;
+    border: 2px solid #ddd;
+}
+.input{
+    width: 95%;
+    margin:.5em ;
+    border-radius: .3em;
+    padding: 1em;
+    border: 2px solid #ddd;
+}
+.aa{
+    border: none;
+    cursor: pointer;
+    padding: .5em 1.5em;
+    border-radius: .3em;
+    color: white;
+    background-color: #111;
+    margin: .5em;
+}
+.aa:hover{
+    background-color: #333;
+}
+@media screen and (max-width:800px) {
+    .last-hard-content{
+        width: 100%;
+    }
+    .last-hard-content-holder{
+        flex-direction: column;
+    }
+    .form .inp{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .input{
+        width: 95%;
+    }
+}
+.footer{
+    padding: 2.2em;
+    margin-top: 0;
+}
+.footer p{
+    text-align: center;
+    font-size: 2em;
+}
+.footer .fab:hover{
+    color: #333;
+}
